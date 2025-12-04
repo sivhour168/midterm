@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIVHOUR STORE</title>
+    <link rel="shortcut icon" href="Image/logop.png" type="image/x-icon">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+</head>
+
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box; 
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    .fixed{
+        position: fixed;
+        right: 40px;
+        bottom: 80px;
+    }
+    .table1 {
+        border-color: yellow;
+        width: 100%;
+        height: auto;
+        margin: auto;
+        border: 0;
+        /* border-collapse: collapse; */
+        & .nav-bar{
+            width: 100%;
+            height: 190px;
+            background-color: rgb(231, 192, 227);
+            display: flex;
+
+            & .logo{
+                width: 10%;
+                height: 100%;
+                /* background-color: tomato; */
+                & h4{
+                    font-family: Khmer Os Muol Light ;
+                    color: aliceblue;
+                }
+
+                & img{
+                    width: 150px;
+                }
+            }
+
+            & .title{
+                width: 90%;
+                height: auto;
+                background-color: rgb(231, 192, 227);
+                padding-top: 30px;
+            }
+
+              & .logoleft {
+                width: 10%;
+                height: 100%;
+                /* background-color: tomato; */
+
+
+                & img{
+                    width: 150px;
+                }
+            }
+        }
+
+
+        .boxmar{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(231, 192, 227);
+
+            & img{
+                width: 300px;
+                height: 200px;
+            }
+        }
+
+       & .choice{
+            width: 100%;
+            height: 100px;
+            background-color: rgb(222, 223, 225);
+            padding-top: 20px;
+            display: flex;
+            padding-left: 450px;
+
+            & a{
+
+                 & img{
+                width: 50px;
+                height: 50px;
+                
+               
+            }
+            & .newf{
+                color: rgb(7, 7, 7);
+                font-family: Governor ;
+                font-size: 30px;
+                margin-top: 8px;
+
+            }
+            }
+
+
+           
+        }
+
+
+        .table2 {
+        border-color: rgb(244, 119, 211);
+        width: 80%;
+        height: auto;
+        margin: auto;
+        box-shadow: 0px 4px 10px 7px darkgray;
+
+        & .boxpro{
+            width: 300px;
+            height: 550px;
+            /* background-color: black;  */
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+
+            & .product{
+                width: 100%;
+                height: 270px;
+                /* background-color: aqua; */
+                & img{
+                    width: 210px;
+                    height: 220px;
+                }
+            }
+
+            & .name-pro{
+                width: 100%;
+                height: 170px;
+                /* background-color: red; */
+
+                & .namepro{
+                    color: black;
+                    font-family: AKbalthom Korea;
+                        
+                }
+                & .later{
+                    color: black;
+                    font-family: AKbalthom Korea;
+                    font-weight: normal;
+                        
+                 } 
+                & .price{
+                    color: black;
+                    font-family: AKbalthom Korea;
+                    font-size: 30px;
+                }
+                & .dis{
+                    color: red;
+                    font-family: AKbalthom Korea;
+                    font-size: 30px;
+                }
+            }
+
+            & .box-buy{
+                width: 100%;
+                height: 100px;
+                /* background-color: violet; */
+                margin-top: 30px;
+            & .buy{
+                width: 130px;
+                height: 40px;
+                background-color: rgb(61, 168, 61);
+                border-radius: 10px;
+                padding-top: 5px;
+
+                    & .order{
+                        color: rgb(250, 248, 248);
+                        font-family: AKbalthom Korea;
+                        font-size: 18px;
+                    
+                    }
+                }
+           }
+            
+            
+          
+          
+          
+
+
+        
+        }
+    
+    }
+
+    & .boxlat{
+        width: 100%;
+        height: 500px;
+        background-color: rgb(246, 205, 212);
+        gap: 30px;
+        display: flex;
+        padding-left: 15%;
+        padding-top: 50px;
+        /* justify-content: space-around; */
+
+        & .card{
+            width: 300px;
+            height: 500px;
+            /* background-color: whitesmoke; */
+        }
+
+
+    }
+     & .boxfoot{
+        width: 100%;
+        height: 350px;
+        background-color:  rgb(246, 205, 212);
+        gap: 30px;
+        /* display: flex; */
+        /* padding-left: 15%; */
+
+        & .box-contry{
+            width: 100%;
+            height: 150px;
+            display: flex;
+            /* background-color: yellowgreen; */
+
+            & .box-contry-left{
+                width: 50%;
+                height: 150px;
+                /* background-color: red; */
+                padding-left: 200px ;
+            }
+
+            & .box-contry-right{
+                 width: 50%;
+                height: 150px;
+                /* background-color: blue; */
+                display: flex;
+                gap: 20px;
+                padding-left: 50px;
+
+
+                & .box-cam {
+                    margin-top: 40px;
+                    width:15%;
+                    height: 50px;
+                    /* background-color: pink; */
+                    border: solid 1px white;
+                    display: flex;
+                    padding-top: 9px;
+                    padding-left: 2px;
+                   
+
+                    & p{
+                         color: white;
+                         font-size: 10px;
+                         margin-top: 10px;
+                         margin-left:15px;
+                    }
+                }
+                & .box-lang {
+                    margin-top: 40px;
+                    width:15%;
+                    height: 50px;
+                    /* background-color: orange; */
+                     border: solid 1px white;
+
+                    /* border: 1px; */
+                    & p{
+                         color: white;
+                         font-size: 10px;
+                         margin-top: 20px;
+                         margin-left: 1px;
+                    }
+                }
+            }
+
+            
+        }
+     }
+
+    }
+    & .box-but {
+        width: 100%;
+        height: 80px;
+        background-color: pink;
+        color: white;
+        position: fixed;
+        bottom: 1px;
+
+        & p {
+            margin-top: 10px;
+            font-family: AKbalthom Naga;
+            font-size: 40px;
+        }
+    }
+
+</style>
+<body>
+    <a name="top">
+    
+    <table class="table1" border="0"
+    cellspacing="0"
+    >
+        <tr>
+            <th>
+                <div class="nav-bar">
+                    <div class="logo">
+                        <img src="Image/setec.png" alt="photo">
+                        <h4>វិទ្យាស្ថានស៊ីតិក</h4>
+                    </div>
+                    <div class="title">
+                        <img width="700px" src="Image/title2.png" alt="">
+                    </div>
+                    <div class="logoleft">
+                        <img  src="Image/logop.png" alt="">
+                    </div>
+                </div>
+            </th>
+        </tr>
+        <tr>
+            
+
+            <th>
+                <div class="boxmar">
+                     <marquee behavior="alternate" direction="" scrollamount="15" onmouseover="this.stop()" onmouseout="this.start()">
+                        <img src="Image/marquee/m1.png" alt="">
+                        <img  src="Image/marquee/m2.webp" alt="">
+                        <img  src="Image/marquee/m3.webp" alt="">
+                        <img  src="Image/marquee/m4.webp" alt="">
+                        <img  src="Image/marquee/m5.webp" alt="">
+                        <img  src="Image/marquee/m6.avif" alt="">
+                        <img  src="Image/marquee/m7.webp" alt="">
+                        <img  src="Image/marquee/m8.webp" alt="">
+                        <img  src="Image/marquee/m9.jpg" alt="">
+                        <img  src="Image/marquee/m11.avif" alt="">
+                        <img  src="Image/marquee/m12.webp" alt="">
+                        <img  src="Image/marquee/m13.webp" alt="">
+                        <img  src="Image/marquee/m14.webp" alt="">
+                        <img  src="Image/marquee/m15.webp" alt="">
+                        <img  src="Image/marquee/16.jpg" alt="">
+                        <img  src="Image/marquee/m17.webp" alt="">
+                       
+
+                     </marquee>
+                 
+
+                </div>
+            </th>
+        </tr>
+        <tr>
+            <th>
+                <div class="choice">
+                    
+                    <a href="Index.html"><img src="Image/home.png" alt=""></a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="marry.html"><p class="newf" style="color: red; background-color: rgba(28, 24, 19, 0.172);">Marry and May</p></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="beauty.html"><p class="newf">Beauti of Joseon</p></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="skin1004.html"><p class="newf">Skin 1004</p></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="isntree.html"><p class="newf">Isntree</p></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="contact.html"><img src="Image/call.png" alt=""></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
+                </div>
+            </th>
+        </tr>
+        <tr>
+           <th>
+            <div class="fixed">
+                <a href="#top"><img width="100px" src="Image/upppppppp.gif" alt=""></a>
+            </div>
+            <table class="table2" border="1px"
+                    cellspacing="0">
+                <tr>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                              
+                                 <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+                                <img src="Image/marry and may/w1.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w2.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w3.webp">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w4.jpg" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w5.jpg" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+
+                </tr>
+
+
+
+
+
+
+
+                <tr>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w6.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img  src="Image/marry and may/w7.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img  src="Image/marry and may/w8.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img  src="Image/marry and may/w9.jpg" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img  src="Image/marry and may/w10.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+
+                </tr>
+
+
+
+
+                <tr>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w15.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w11.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w12.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w13.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w14.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+
+                </tr>
+                <tr>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w16.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w17.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w18.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w20.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img  src="Image/marry and may/w19.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+
+                </tr>
+                <tr>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img  src="Image/marry and may/w21.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img  src="Image/marry and may/w22.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w23.webp" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img  src="Image/marry and may/w24.jpg" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Marry and May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+                    <th align="middle">
+                        <div class="boxpro">
+                            <div class="product">
+                               <img align="right" style="width: 70px; height: 70px;" src="Image/gif heart.gif" alt="">
+
+                                <img src="Image/marry and may/w25.jpg" alt="">
+                               
+                            </div>
+                            <div class="name-pro">
+                                <h3 align="left" class="namepro">Mary And May</h3>
+                                <p align="left" class="later">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quas, deleniti doloribus quasi ipsa consectetur?</p>
+                                <p align="right" class="price"><s> 11. <sup>99 $</sup></s> &nbsp;&nbsp;&nbsp; <span class="dis" >10. <sup>00$</sup></span></p>
+                            </div>
+                                <div class="box-buy">
+                                    <div class="buy">
+                                        <p class="order">Buy Now</p> 
+                                    </div>
+                            </div>
+                           
+                            
+                        </div>                        
+                    </th>
+
+                </tr>
+
+
+            </table>
+           </th>
+        </tr>
+
+        <tr>
+            <th>
+               <div class="boxlat">
+                    <br><br>
+                        <div class="card">
+                              <h3 align="left" style="font-family: AKbalthom Naga;">Get to Know Us </h3>
+                              <p align="left" style="font-family: AKbalthom Naga; font-weight: norma;;" >
+                                Careers <br>
+                                Sivhour <br>
+                                Newsletter <br>
+                                About SHSTORE <br>
+                                Accessibility <br>
+                                Sustainability <br>
+                                Press Center <br>
+                                Investor <br>
+                                Relations <br>
+                                SHSTORE Devices <br>
+                                SHSTORE Science <br>
+                            </p>
+                        </div>
+                        <div class="card">
+                             <h3 align="left" style="font-family: AKbalthom Naga;">Make Money with Us</h3>
+                              <p align="left" style="font-family: AKbalthom Naga; font-weight: norma;;" >
+                                    Sell on SHSTORE <br>
+                                    Sell apps on SHSTORE <br>
+                                    Supply to SHSTORE<br>
+                                    Protect & Build Your Brand<br>
+                                    Become an Affiliate<br>
+                                    Become a Delivery Driver<br>
+                                    Start a Package Delivery Business<br>
+                                    Advertise Your Products<br>
+                                    Self-Publish with Us<br>
+                                    Become an SHSTORE Hub Partner<br>    
+                                    See More Ways to Make Money<br>
+                            </p>
+                        </div>
+                        <div class="card">
+                            <h3 align="left" style="font-family: AKbalthom Naga;">SHSTORE Payment Products</h3>
+                              <p align="left" style="font-family: AKbalthom Naga; font-weight: norma;;" >
+                                SHSTORE Visa<br>
+                                SHSTORE Store Card<br>
+                                SHSTORE Secured Card<br>
+                                SHSTORE Business Card<br>
+                                Shop with Points<br>
+                                Credit Card Marketplace<br>
+                                Reload Your Balance<br>
+                                Gift Cards<br>
+                                SHSTORE Currency Converter<br>
+
+                            </p>
+
+                        </div>
+                        <div class="card">
+                             <h3 align="left" style="font-family: AKbalthom Naga;">Let Us Help You</h3>
+                              <p align="left" style="font-family: AKbalthom Naga; font-weight: norma;;" >
+                                 Your Account<br>
+                                Your Orders<br>
+                                Shipping Rates & Policies<br>
+                                SHSTORE Prime<br>
+                                Returns & Replacements<br>
+                                Manage Your Content and Devices<br>
+                                Recalls and Product Safety Alerts<br>
+                                Registry & Gift List<br>
+                                Help<br>
+
+                            </p>
+                        </div>
+
+                        
+                        
+
+                </div>
+                        
+                        
+
+                
+                
+                <div class="boxfoot">
+                    <br><br><br>
+                    <hr>
+                    <br><br><br>
+                    <div class="box-contry">
+                        <div class="box-contry-left">
+                            <img style="width: 150px;" src="Image/logop.png" alt="">
+                        </div>
+                        <div class="box-contry-right">
+                            <div class="box-cam">
+                                <img width="50px" height="30px" src="Image/marquee/cam flag.jpg" alt="">
+                                <p>CAMBODIA</p>
+                            </div>
+                            <div class="box-lang">
+                                <p>ENGLISH</p>
+                            </div>
+                        </div>
+                    </div>
+                            <br>
+                         <p>
+                             Conditions of Use
+                            Privacy Notice
+                            Consumer Health Data Privacy Disclosure
+                            Your Ads Privacy Choices <br>
+                            © 1996-2025, Amazon.com, Inc. or its affiliates
+                          </p>
+
+                </div>
+                
+                
+
+            </th>
+        </tr>
+        
+    </table>
+    <div class="box-but">
+        <marquee behavior="" direction="left" scrollamount="10" onmouseover="this.stop()" onmouseout="this.start()">
+            <p>វិទ្យាស្ថានស៊ីតិក​   ឈ្មោះនិស្សិ​ត: អន ស៊ីវហួរ​ ក្រុម: SW13 ជំនាន់ទី23 វេនថ្ងៃ មុខវិជ្ជា: Web development បង្រៀនដោយលោកគ្រូ​: រី​ វិសាន </p>
+        </marquee> 
+
+    </div>
+
+
+  
+
+</body>
+</html>
